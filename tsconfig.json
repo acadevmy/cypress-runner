@@ -1,0 +1,17 @@
+{
+  "compilerOptions": {
+    "declaration": true,
+    "module": "commonjs",
+    "target": "ES2021",
+    "skipLibCheck": true,
+    "sourceMap": false,
+    "strict": true,
+    "useUnknownInCatchVariables": false,
+    "outDir": "./dist",
+    "types": [
+      "node"
+    ]
+  },
+  "include": ["lib/src"],
+  "exclude": ["node_modules"]
+}
