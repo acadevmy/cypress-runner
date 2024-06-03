@@ -19,15 +19,16 @@ jobs:
           node-version: '16'
 
       - name: Setup Corepack
-        run: |
-          corepack enable
-          corepack prepare npm@10.8.1 --activate
+        run: corepack enable
 
       - name: Install dependencies
-        run: npm install
+        run: corepack npm install
+
+      - name: Build project
+        run: corepack npm run build
 
       - name: Run Semantic Release
         env:
           GITHUB_TOKEN: ${{ secrets.GH_TOKEN }}
           NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
-        run: npx semantic-release
+        run: corepack npm run release
