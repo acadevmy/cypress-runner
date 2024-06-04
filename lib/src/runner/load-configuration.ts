@@ -22,12 +22,12 @@ export const loadConfiguration = (): CypressRunnerConfig => {
             module: 'commonjs'
           }
         });
-        const tsConfig = require(filePath).default;
+        return require(filePath).default;
       }
     }
   }
 
-  throw new Error('No configuration file found. Please create a .cypressrunnerrc file with the appropriate format (json, js, ts).');
+  throw new Error(`No configuration file found. Please create a ${configFileName} file with the appropriate format (json, js, ts).`);
 };
 
 
