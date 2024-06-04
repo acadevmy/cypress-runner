@@ -1,3 +1,10 @@
+## [1.0.2](https://github.com/acadevmy/cypress-runner/compare/v1.0.1...v1.0.2) (2024-06-04)
+
+
+### Bug Fixes
+
+* fixed ts loader ([c6c8749](https://github.com/acadevmy/cypress-runner/commit/c6c8749ce85c377036aef05373c9ee41643877ba))
+
 ## [1.0.1](https://github.com/acadevmy/cypress-runner/compare/v1.0.0...v1.0.1) (2024-06-04)
 
 
