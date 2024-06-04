@@ -32,7 +32,6 @@
   ],
   "license": "MIT",
   "author": ".devmy",
-  "private": "false",
   "publishConfig": {
     "access": "public"
   },
