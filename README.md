@@ -31,7 +31,7 @@ Cypress Runner requires a `.cypressrunnerrc` file in the directory where it is e
     "delay": 1000,
     "timeout": 30000
   }
-};
+}
 ```
 
 ### Example `.cypressrunnerrc.json` File
@@ -48,7 +48,7 @@ Cypress Runner requires a `.cypressrunnerrc` file in the directory where it is e
     "delay": 1000,
     "timeout": 30000
   }
-};
+}
 ```
 
 ### Example `.cypressrunnerrc.js` File
