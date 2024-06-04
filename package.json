@@ -11,7 +11,7 @@
     "release": "semantic-release"
   },
   "bin": {
-    "cypress-runner": "./bin/cypress-runner.js"
+    "cypress-runner": "bin/cypress-runner.js"
   },
   "keywords": [
     "cypress",
@@ -32,6 +32,17 @@
   ],
   "license": "MIT",
   "author": ".devmy",
+  "private":"false",
+  "publishConfig": {
+    "access": "public"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/acadevmy/cypress-runner.git"
+  },
+  "bugs": {
+    "url": "https://github.com/acadevmy/cypress-runner/issues"
+  },
   "dependencies": {
     "concurrently": "^8.2.2",
     "figlet": "^1.7.0",
