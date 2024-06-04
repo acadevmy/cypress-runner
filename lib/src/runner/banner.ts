@@ -1,4 +1,4 @@
-import * as figlet from 'figlet';
+import figlet from 'figlet';
 import { isNil } from 'lodash';
 
 const figletAsync = (txt: string, options: figlet.Options | undefined) =>

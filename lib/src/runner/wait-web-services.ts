@@ -1,5 +1,5 @@
 import { isEmpty, isNil } from 'lodash';
-import * as waitOn from 'wait-on';
+import waitOn from 'wait-on';
 
 import { CypressRunnerConfig } from './cypress-runner-config';
 

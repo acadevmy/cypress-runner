@@ -4,8 +4,19 @@
   "description": "CLI tool to launch frontend and backend servers and run Cypress tests",
   "main": "./bin/cypress-runner.js",
   "type": "commonjs",
+  "module": "./dist/index.mjs",
+  "types": "./dist/index.d.ts",
+  "files": [
+      "dist"
+  ],
+  "exports": {
+    "import": "./dist/index.js",
+    "require": "./dist/index.cjs",
+    "default": "./dist/index.js",
+    "types": "./dist/index.d.ts"
+  },
   "scripts": {
-    "build": "tsc",
+    "build": "tsup",
     "lint": "eslint 'lib/src/**/*.ts'",
     "lint:fix": "eslint 'lib/src/**/*.ts' --fix",
     "release": "semantic-release"
@@ -70,6 +81,7 @@
     "eslint-plugin-simple-import-sort": "^12.1.0",
     "prettier": "^3.2.5",
     "semantic-release": "^24.0.0",
+    "tsup": "^8.1.0",
     "typescript": "^5.3.3"
   },
   "peerDependencies": {

@@ -4,9 +4,10 @@
     "module": "commonjs",
     "target": "ES2021",
     "skipLibCheck": true,
-    "sourceMap": false,
+    "sourceMap": true,
     "strict": true,
     "useUnknownInCatchVariables": false,
+    "esModuleInterop": true,
     "outDir": "./dist",
     "types": [
       "node"
