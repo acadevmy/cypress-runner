@@ -1,3 +1,10 @@
+# [1.2.0](https://github.com/acadevmy/cypress-runner/compare/v1.1.0...v1.2.0) (2024-06-05)
+
+
+### Features
+
+* improved error messages ([3f8f775](https://github.com/acadevmy/cypress-runner/commit/3f8f7755750226074a23d04135d2c6436caa46fb))
+
 # [1.1.0](https://github.com/acadevmy/cypress-runner/compare/v1.0.2...v1.1.0) (2024-06-05)
 
 
