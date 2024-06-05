@@ -1,3 +1,10 @@
+# [1.1.0](https://github.com/acadevmy/cypress-runner/compare/v1.0.2...v1.1.0) (2024-06-05)
+
+
+### Features
+
+* removed minification ([a15fec4](https://github.com/acadevmy/cypress-runner/commit/a15fec4c81a64dc43ff28bcb012b8dd1cfd40b23))
+
 ## [1.0.2](https://github.com/acadevmy/cypress-runner/compare/v1.0.1...v1.0.2) (2024-06-04)
 
 

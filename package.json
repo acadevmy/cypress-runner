@@ -1,6 +1,6 @@
 {
   "name": "@devmy/cypress-runner",
-  "version": "1.0.2",
+  "version": "1.1.0",
   "description": "CLI tool to launch frontend and backend servers and run Cypress tests",
   "main": "./bin/cypress-runner.js",
   "type": "commonjs",
