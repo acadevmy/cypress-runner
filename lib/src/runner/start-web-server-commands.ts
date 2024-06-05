@@ -4,7 +4,9 @@ import { castArray, isEmpty, isNil, negate } from 'lodash';
 import { CypressRunnerConfig } from './cypress-runner-config';
 import { killConcurrentlyResult } from './kill-concurrently-result';
 
-export const startWebServerCommands = (configuration: CypressRunnerConfig): () => Promise<void> => {
+export const startWebServerCommands = (
+  configuration: CypressRunnerConfig,
+): (() => Promise<void>) => {
   const commands = castArray(configuration.startWebServerCommands).filter(negate(isNil));
 
   if (isEmpty(commands)) {

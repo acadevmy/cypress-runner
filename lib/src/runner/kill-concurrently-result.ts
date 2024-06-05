@@ -10,6 +10,6 @@ export const killConcurrentlyResult = async (
       command.kill();
       console.info(`✅ ${command.name ?? command.command} has been successfully shut down`);
     });
-  
-    await concurrentlyResult.result;
+
+  await concurrentlyResult.result;
 };

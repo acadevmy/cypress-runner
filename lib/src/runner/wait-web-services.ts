@@ -5,13 +5,15 @@ import { CypressRunnerConfig } from './cypress-runner-config';
 
 export const waitWebServices = async (configuration: CypressRunnerConfig): Promise<void> => {
   const waitOnConfigs = configuration.waitOn;
-  if (!isNil(waitOnConfigs) && !isEmpty(waitOnConfigs?.resources)) {
-    try {
-      await waitOn(waitOnConfigs);
-    } catch {
-      throw new Error(
-        'Timeout: the commands have not yet pulled up all the services expected to start cypress',
-      );
-    }
+  if (isNil(waitOnConfigs) || isEmpty(waitOnConfigs?.resources)) {
+    return;
+  }
+
+  try {
+    await waitOn(waitOnConfigs);
+  } catch (e) {
+    throw new Error(
+      `The commands have not yet pulled up all the services expected to start cypress.\n${e}`,
+    );
   }
 };

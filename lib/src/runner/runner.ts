@@ -33,8 +33,8 @@ export const cypressRunner = async () => {
       stdio: 'inherit',
       env: process.env,
     });
-  } catch {
-    throw new Error('Ooops! Something went wrong :(');
+  } catch (e) {
+    throw new Error(`something went wrong during execution.\n${e}`);
   } finally {
     await webServersKiller().catch(() => null);
   }
