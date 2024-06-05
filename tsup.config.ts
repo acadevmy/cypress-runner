@@ -7,7 +7,7 @@ export default defineConfig({
   splitting: true,
   treeshake: true,
   sourcemap: true,
-  minify: true,
+  minify: false,
   clean: true,
   cjsInterop: true,
   tsconfig: './tsconfig.json'
