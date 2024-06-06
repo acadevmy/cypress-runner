@@ -1,3 +1,10 @@
+## [1.2.1](https://github.com/acadevmy/cypress-runner/compare/v1.2.0...v1.2.1) (2024-06-06)
+
+
+### Bug Fixes
+
+* joined process arguments with space character ([0ce93fd](https://github.com/acadevmy/cypress-runner/commit/0ce93fd9220955036c9028fd8315690db3f8f320))
+
 # [1.2.0](https://github.com/acadevmy/cypress-runner/compare/v1.1.0...v1.2.0) (2024-06-05)
 
 
