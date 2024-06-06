@@ -28,7 +28,7 @@ export const cypressRunner = async () => {
 
     isDebug && console.debug('web server commands ready to tests, running cypress');
 
-    execSync(`cypress ${processArguments}`, {
+    execSync(`cypress ${processArguments.join(' ')}`, {
       cwd: process.cwd(),
       stdio: 'inherit',
       env: process.env,
