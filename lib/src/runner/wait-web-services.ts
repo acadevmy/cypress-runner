@@ -11,9 +11,9 @@ export const waitWebServices = async (configuration: CypressRunnerConfig): Promi
 
   try {
     await waitOn(waitOnConfigs);
-  } catch (e) {
+  } catch (error) {
     throw new Error(
-      `The commands have not yet pulled up all the services expected to start cypress.\n${e}`,
+      `The commands have not yet pulled up all the services expected to start cypress.\n${error}`,
     );
   }
 };

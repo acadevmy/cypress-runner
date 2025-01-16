@@ -3,6 +3,6 @@ import { WaitOnOptions } from 'wait-on';
 
 export interface CypressRunnerConfig {
   debug?: boolean;
-  startWebServerCommands: Array<ConcurrentlyCommandInput> | ConcurrentlyCommandInput;
+  startWebServerCommands: ConcurrentlyCommandInput[] | ConcurrentlyCommandInput;
   waitOn?: WaitOnOptions;
 }

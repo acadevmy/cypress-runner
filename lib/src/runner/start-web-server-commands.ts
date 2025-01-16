@@ -18,7 +18,7 @@ export const startWebServerCommands = (
     cwd: process.cwd(),
   });
 
-  const killer = () => killConcurrentlyResult(server);
+  const killer = (): Promise<void> => killConcurrentlyResult(server);
 
   [
     `exit`,
