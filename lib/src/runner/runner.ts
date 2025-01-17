@@ -1,8 +1,8 @@
 import { execSync } from 'child_process';
 
 import { printBanner } from './banner';
+import { loader } from './configuration-loaders';
 import { CypressRunnerConfig } from './cypress-runner-config';
-import { loadConfiguration } from './load-configuration';
 import { startWebServerCommands } from './start-web-server-commands';
 import { waitWebServices } from './wait-web-services';
 
@@ -15,7 +15,7 @@ export const cypressRunner = async (): Promise<void> => {
   const processArguments = [...process.argv];
   processArguments.splice(0, SCRIPT_ARG_START_INDEX);
 
-  const configuration: CypressRunnerConfig = loadConfiguration();
+  const configuration: CypressRunnerConfig = loader.load();
   const isDebug = configuration.debug;
 
   if (isDebug) {
