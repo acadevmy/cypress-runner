@@ -2,6 +2,11 @@
 
 Cypress Runner is a command-line interface (CLI) tool designed to launch specified frontend and backend servers before running Cypress tests. The CLI expects to find a `.cypressrunnerrc` configuration file in the current working directory (cwd).
 
+## Requirements
+
+- Node.js >= 22.12.0
+- Cypress >= 13 (tested with Cypress 16)
+
 ## Installation
 
 To install Cypress Runner, you can use npm:
