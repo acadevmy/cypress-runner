@@ -1,3 +1,11 @@
+## [1.2.2](https://github.com/acadevmy/[secure]-runner/compare/v1.2.1...v1.2.2) (2026-11-05)
+
+
+### Bug Fixes
+
+* **deps:** update dependencies for Cypress 16 and Node 22 ([9f4c2c2](https://github.com/acadevmy/[secure]-runner/commit/9f4c2c27b957f7b98864e747111a7e2309d0f1dd))
+* show the command when its name is empty on shutdown ([37cd93f](https://github.com/acadevmy/[secure]-runner/commit/37cd93f7f88e4ee1e9b552c334cc5e5bef188baf))
+
 ## [1.2.1](https://github.com/acadevmy/cypress-runner/compare/v1.2.0...v1.2.1) (2024-06-06)
 
 
