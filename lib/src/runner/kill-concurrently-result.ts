@@ -8,7 +8,7 @@ export const killConcurrentlyResult = async (
     .forEach((command) => {
       console.info(`Shutting down ${command.command}`);
       command.kill();
-      console.info(`✅ ${command.name ?? command.command} has been successfully shut down`);
+      console.info(`✅ ${command.name || command.command} has been successfully shut down`);
     });
 
   await concurrentlyResult.result;
